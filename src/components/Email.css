@@ -3,54 +3,39 @@
   padding: 20px;
   background-color: #f9f9f9;
 }
-.email-subject {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: bold;
-  margin: 0;
-}
 .sender-name {
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   font-style: normal;
   font-weight: bold;
   margin: 0;
+  text-align: left;
 }
 .sender-email {
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   font-style: normal;
   font-weight: normal;
   margin: 0;
+  text-align: left;
 }
 .email-date {
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   font-style: normal;
   font-weight: normal;
   margin: 0;
-}
-.receiver-name {
-  font-family: Arial, sans-serif;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: normal;
-  margin: 0;
-}
-.receiver-email {
-  font-family: Arial, sans-serif;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: normal;
-  margin: 0;
+  text-align: left;
 }
 .email-content {
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   font-style: normal;
   font-weight: normal;
   margin: 0;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .email-tags {
   font-family: Arial, sans-serif;
@@ -58,4 +43,20 @@
   font-style: normal;
   font-weight: normal;
   margin: 0;
+  text-align: right;
+}
+.email-info {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  text-align: left;
+  color: #6a5858;
+  display: flex;
+  align-items: center;
+}
+.receiver-info {
+  text-align: left;
+  color: #000000cc;
 }

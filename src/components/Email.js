@@ -1,30 +1,39 @@
 import React, { useEffect, useState } from "react";
-import dummyData from "../data/dummydata.json";
 import "./Email.css";
 
-function Email() {
-  const [randomData, setRandomData] = useState(null);
-
-  useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * dummyData.length);
-    setRandomData(dummyData[randomIndex]);
-  }, []);
-
+function Email({ randomData }) {
   return (
     <div className="Email">
       {randomData && (
         <>
-          <EmailSender
-            sender_name={randomData.sender_name}
-            sender_email={randomData.sender_email}
-          />
-          <EmailDate date={randomData.date} />
-          <EmailReceiver
-            receiver_name={randomData.receiver_name}
-            receiver_email={randomData.receiver_email}
-          />
+          <div>
+            <EmailSender sender_name={randomData.sender_name} />
+            <EmailTags tags={randomData.tags} />
+            <EmailDate date={randomData.date} />
+          </div>
           <EmailContent content={randomData.content} />
-          <EmailTags tags={randomData.tags} />
+          <div>
+            <h1 className="email-info">
+              From:
+              <span className="receiver-info">
+                {randomData.sender_name} {randomData.sender_email}
+              </span>
+            </h1>
+            <h1 className="email-info">
+              Date:
+              <span className="receiver-info">{randomData.date}</span>
+            </h1>
+            <h1 className="email-info">
+              Subject:
+              <span className="receiver-info">{randomData.subject}</span>
+            </h1>
+            <h1 className="email-info">
+              To:
+              <span className="receiver-info">
+                Isabel Bowen sbtest.isabel@gmail.com
+              </span>
+            </h1>
+          </div>
         </>
       )}
     </div>
@@ -44,19 +53,10 @@ const EmailDate = ({ date }) => {
   return <h3 className="email-date">{date}</h3>;
 };
 
-const EmailReceiver = ({ receiver_name, receiver_email }) => {
-  return (
-    <div>
-      <h3 className="receiver-name">{receiver_name}</h3>
-      <h3 className="receiver-email">{receiver_email}</h3>
-    </div>
-  );
-};
-
 const EmailContent = ({ content }) => {
   return <p className="email-content">{content}</p>;
 };
 const EmailTags = ({ tags }) => {
   return <p className="email-tags">{tags}</p>;
 };
-export { Email };
+export default Email;

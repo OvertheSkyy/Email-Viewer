@@ -1,7 +1,71 @@
-.Tab {
+.TabContainer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.email-subject {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid #ccc;
   padding: 20px;
   background-color: #f9f9f9;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+}
+
+.drop-down-button {
+  width: 20px;
+  height: 50px;
+  background-image: url("../images/DropDownBtn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  background-color: #f9f9f9;
+}
+.show-button {
+  width: 20px;
+  height: 50px;
+  background-image: url("../images/ShowBtn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  background-color: #f9f9f9;
+}
+.unchecked-button {
+  width: 20px;
+  height: 50px;
+  background-image: url("../images/UncheckedBoxBtn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+  background-color: #f9f9f9;
+  margin-right: auto;
+}
+.checked-button {
+  width: 20px;
+  height: 50px;
+  background-image: url("../images/CheckedBox.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+  background-color: #f9f9f9;
+  margin-right: auto;
 }
