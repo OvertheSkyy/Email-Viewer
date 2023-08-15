@@ -1,0 +1,61 @@
+.Email {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.email-subject {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0;
+}
+.sender-name {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0;
+}
+.sender-email {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+}
+.email-date {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+}
+.receiver-name {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+}
+.receiver-email {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+}
+.email-content {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+}
+.email-tags {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+}
